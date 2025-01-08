@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Define el tipo de documento y el idioma principal de la página -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    <title>Formulario cita</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <!-- Enlaza el archivo CSS para aplicar estilos -->
+    <link rel="icon" href="imagenes/icon.png" type="image/png" />
+    <!-- Ruta al favicon en formato .png -->
+    <title>Dentista</title>
+  </head>
+  <header id="header">
+    <!-- Encabezado de la página -->
+    <img id="img1" src="imagenes/img_medacdent.png" alt="" />
+    <!-- Logo de la clínica -->
+    <h1 class="h1">Clínica dental MedacDent</h1>
+    <!-- Título principal de la clínica -->
+  </header>
+  <body>
+    <main>
+      <!-- Contenedor principal de la página -->
+      <section class="FormularioCitas">
+        <!-- Sección para el formulario de citas -->
+        <h2>Solicitud de cita previa</h2>
+        <!-- Título del formulario -->
+        <form action="" method="" onsubmit="return validacionCita()">
+          <!-- Formulario que ejecuta la función de validación al enviarse -->
+          <label for="nombre">Nombre y apellidos:</label>
+          <!-- Etiqueta para el campo de nombre -->
+          <input type="text" id="nombre" name="nombre" required />
+          <!-- Campo de entrada para el nombre, requerido -->
+          <br /><br />
+          <label for="dni">DNI:</label>
+          <!-- Etiqueta para el campo de DNI -->
+          <input type="number" id="dni" name="dni" required />
+          <!-- Campo de entrada para el DNI, requerido -->
+          <br /><br />
+          <label for="telefono">Teléfono:</label>
+          <!-- Etiqueta para el campo de teléfono -->
+          <input type="number" id="telefono" name="telefono" required />
+          <!-- Campo de entrada para el teléfono, requerido -->
+          <br /><br />
+          <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+          <!-- Etiqueta para el campo de fecha de nacimiento -->
+          <input
+            type="date"
+            id="fecha_nacimiento"
+            name="fecha_nacimiento"
+            required
+          />
+          <!-- Campo de entrada para la fecha de nacimiento, requerido -->
+          <br /><br />
+          <label for="fecha">Fecha y hora de la cita:</label>
+          <!-- Etiqueta para el campo de fecha y hora de la cita -->
+          <input type="datetime-local" id="fecha" name="fecha" required />
+          <!-- Campo de entrada para la fecha y hora de la cita, requerido -->
+          <label for="observaciones">Observaciones:</label>
+          <!-- Etiqueta para el campo de observaciones -->
+          <textarea
+            id="observaciones"
+            name="observaciones"
+            rows="5"
+            cols="50"
+          ></textarea>
+          <!-- Área de texto para observaciones -->
+          <div id="botones">
+            <!-- Contenedor para los botones -->
+            <button type="submit" class="boton">Enviar</button>
+            <!-- Botón para enviar el formulario -->
+            <button type="reset" class="boton">Limpiar formulario</button>
+            <!-- Botón para limpiar el formulario -->
+            <button type="button" class="boton" onclick="irCitasCreadas()">
+              Volver al listado de citas
+            </button>
+            <!-- Botón para volver al listado de citas -->
+          </div>
+        </form>
+        <!-- Cierre del formulario -->
+      </section>
+    </main>
+    <script
+      type="text/JavaScript"
+      src="funcionesJS/funcionesCrearCitas.js"
+    ></script>
+    <!-- Enlaza el archivo JavaScript para la funcionalidad del formulario -->
+  </body>
+  <footer id="pie">
+    <!-- Pie de página -->
+    <div class="footer-content">
+      <!-- Contenedor para el contenido del pie de página -->
+      <div class="footer-logo">
+        <!-- Sección para el logo en el pie de página -->
+        <img
+          id="img1"
+          src="imagenes/img_medacdent.png"
+          alt="Logo Clínica MedacDent"
+        />
+        <!-- Logo de la clínica -->
+      </div>
+      <div class="footer-description">
+        <!-- Sección para la descripción de la clínica -->
+        <p>
+          Clínica Dental MedacDent se compromete a ofrecer la mejor atención
+          dental a nuestros pacientes. Nuestro equipo de profesionales está aquí
+          para ayudarte a mantener una sonrisa saludable.
+        </p>
+        <!-- Descripción de la clínica -->
+      </div>
+      <div class="footer-links">
+        <!-- Sección para enlaces útiles -->
+        <h3>Enlaces útiles</h3>
+        <!-- Título para los enlaces -->
+        <ul>
+          <!-- Lista de enlaces -->
+          <li><a href="index.html">Inicio</a></li>
+          <!-- Enlace a la página de inicio -->
+          <li><a href="servicios.html">Servicios</a></li>
+          <!-- Enlace a la página de servicios -->
+          <li><a href="contacto.html">Contacto</a></li>
+          <!-- Enlace a la página de contacto -->
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+          <!-- Enlace a la política de privacidad -->
+        </ul>
+      </div>
+      <div class="footer-social">
+        <!-- Sección para enlaces a redes sociales -->
+        <h3>Síguenos</h3>
+        <!-- Título para las redes sociales -->
+        <ul>
+          <!-- Lista de enlaces a redes sociales -->
+          <li>
+            <a href="https://www.facebook.com/MedacDent" target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <!-- Enlace a Facebook -->
+          <li>
+            <a href="https://www.instagram.com/MedacDent" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <!-- Enlace a Instagram -->
+          <li>
+            <a href="https://twitter.com/MedacDent" target="_blank">Twitter</a>
+          </li>
+          <!-- Enlace a Twitter -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- Sección inferior del pie de página -->
+      <p>© 2025 Clínica MedacDent. Todos los derechos reservados.</p>
+      <!-- Aviso de derechos de autor -->
+    </div>
+  </footer>
+</html>

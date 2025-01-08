@@ -1,0 +1,215 @@
+/* Reset CSS: Elimina márgenes y paddings por defecto, y establece un modelo de caja consistente */
+* {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo para la fuente Roboto */
+.roboto-thin {
+    font-family: "Roboto", sans-serif; /* Establece la fuente Roboto */
+    font-weight: 100; /* Peso de la fuente (ligera) */
+    font-style: normal; /* Estilo de la fuente (normal) */
+}
+ 
+/* Body y contenedor principal */
+body {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Organiza los elementos en columna */
+    background-image: url(../imagenes/fondo.jpg); /* Establece una imagen de fondo */
+    background-size: cover; /* Cubre todo el contenedor con la imagen */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+    height: 100vh; /* Altura del viewport */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-image: url(../imagenes/fondo.jpg); /* Imagen de fondo para el encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interno en el encabezado */
+    display: flex; /* Usa flexbox para organizar los elementos en el encabezado */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+header img {
+    width: 50px; /* Ancho de la imagen del logo */
+    height: 50px; /* Alto de la imagen del logo */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilo para el contenedor principal (main) */
+main {
+    width: 100%; /* Ancho total del contenedor */
+    max-width: 850px; /* Ancho máximo del contenedor */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilo del formulario */
+.FormularioCitas {
+    display: flex; /* Usa flexbox para organizar los elementos en el formulario */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.FormularioCitas h2 {
+    color: #46A2FD; /* Color del título del formulario */
+    margin-bottom: 20px; /* Margen inferior del título */
+}
+
+.FormularioCitas label {
+    margin-top: 10px; /* Margen superior de las etiquetas */
+    color: #333; /* Color del texto de las etiquetas */
+}
+
+.FormularioCitas input, 
+.FormularioCitas textarea {
+    width: 100%; /* Ancho total de los campos de entrada y textarea */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Margen superior de los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    outline: none; /* Elimina el contorno al enfocar */
+}
+
+.FormularioCitas textarea {
+    resize: none; /* Evitar que el textarea se redimensione */
+}
+
+/* Estilo para el pie de página (footer) */
+footer {
+    background-image: url(../imagenes/fondo.jpg); /* Imagen de fondo para el pie de página */
+    padding-top: 15px; /* Espaciado superior */
+    margin-top: 150px; /* Margen superior de 150px */ 
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    display: flex; /* Usa flexbox para organizar los elementos en el pie de página */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ancho máximo de la imagen del logo del pie de página */
+}
+
+.footer-description {
+    max-width: 300px; /* Ancho máximo de la descripción del pie de página */
+}
+
+.footer-links, .footer-social {
+    max-width: 200px; /* Ancho máximo para enlaces y redes sociales */
+}
+
+.footer-links ul, .footer-social ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+
+.footer-links a, .footer-social a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto de los enlaces */
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+
+.footer-bottom {
+    background-color: #eaeaea; /* Color de fondo del pie de página inferior */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para la tabla */
+#tabla {
+    width: 100%; /* Ancho total de la tabla */
+    max-width: 850px; /* Ancho máximo de la tabla */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para el encabezado de la tabla */
+#tabla thead {
+    background-color: #46A2FD; /* Color de fondo del encabezado de la tabla */
+    color: white; /* Color del texto en el encabezado */
+}
+
+#tabla th {
+    padding: 10px; /* Espaciado interno en las celdas del encabezado */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos para las celdas del cuerpo de la tabla */
+#tabla tbody tr {
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
+}
+
+#tabla tbody td {
+    padding: 10px; /* Espaciado interno en las celdas */
+    color: #333; /* Color del texto en las celdas */
+}
+
+/* Resaltar la fila al pasar el ratón */
+#tabla tbody tr:hover {
+    background-color: rgba(70, 162, 253, 0.1); /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el checkbox */
+#tabla input[type="checkbox"] {
+    cursor: pointer; /* Cambia el cursor al pasar por encima del checkbox */
+}
+
+/* Estilos para la fila nueva */
+#nuevaFila {
+    display: none; /* Oculta la fila nueva por defecto */
+}
+
+/* Estilo para los botones */
+#botones {
+    display: flex; /* Usa flexbox para organizar los botones */
+    margin-top: 20px; /* Margen superior de 20px */
+    width: 100%; /* Ancho total del contenedor de botones */
+}
+
+.boton {
+    margin: 10px; /* Margen alrededor de los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background: #46A2FD; /* Color de fondo de los botones */
+    color: white; /* Color del texto en los botones */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background 0.3s; /* Transición suave para el cambio de fondo */
+}
+
+.boton:hover {
+    background: #3A8EDB; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+/* Diseño Responsive */
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 20px; /* Margen superior de 20px en pantallas pequeñas */
+        padding: 15px; /* Espaciado interno reducido */
+    }
+    #botones {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los botones horizontalmente */
+    }
+    #botones .boton {
+        width: 100%; /* Ancho total de los botones */
+        margin-bottom: 10px; /* Margen inferior entre botones */
+    }
+}

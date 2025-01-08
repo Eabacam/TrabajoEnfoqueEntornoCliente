@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Define el tipo de documento y el idioma principal de la página -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    <title>Citas</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <!-- Enlaza el archivo CSS para aplicar estilos -->
+    <link rel="icon" href="imagenes/icon.png" type="image/png" />
+    <!-- Ruta al favicon en formato .png -->
+    <title>Dentista</title>
+  </head>
+  <header id="header">
+    <!-- Encabezado de la página -->
+    <img id="img1" src="imagenes/img_medacdent.png" alt="" />
+    <!-- Logo de la clínica -->
+    <h1 class="h1">Clínica dental MedacDent</h1>
+    <!-- Título principal de la clínica -->
+  </header>
+  <body class="body">
+    <!-- Cuerpo de la página -->
+    <main>
+      <!-- Contenedor principal de la página -->
+      <h2 id="h2_citasCreadas">Listado de citas</h2>
+      <!-- Título que indica el listado de citas -->
+
+      <div id="botones">
+        <!-- Contenedor para los botones de acción -->
+        <button class="boton" onclick="crearCita()">Crear nueva cita</button>
+        <!-- Botón para crear una nueva cita -->
+        <button type="button" class="boton" onclick="modificarCita()">
+          Modificar cita
+        </button>
+        <!-- Botón para modificar una cita existente -->
+        <button type="button" class="boton" onclick="eliminarCita()">
+          Eliminar cita
+        </button>
+        <!-- Botón para eliminar una cita -->
+      </div>
+
+      <table id="tabla">
+        <!-- Tabla para mostrar el listado de citas -->
+        <thead>
+          <!-- Encabezado de la tabla -->
+          <tr>
+            <th id="seleccionar"></th>
+            <!-- Columna para seleccionar citas (checkbox) -->
+            <th>Nombre</th>
+            <!-- Columna para el nombre del paciente -->
+            <th>DNI</th>
+            <!-- Columna para el DNI del paciente -->
+            <th>Teléfono</th>
+            <!-- Columna para el teléfono del paciente -->
+            <th>Fecha de Nacimiento</th>
+            <!-- Columna para la fecha de nacimiento del paciente -->
+            <th>Fecha y hora de la cita</th>
+            <!-- Columna para la fecha y hora de la cita -->
+            <th>Observaciones</th>
+            <!-- Columna para observaciones adicionales -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Cuerpo de la tabla donde se mostrarán las citas -->
+          <tr id="nuevaFila">
+            <!-- Fila para una nueva cita, inicialmente oculta -->
+            <td id="seleccionar"><input type="checkbox" name="checkbox1" /></td>
+            <!-- Checkbox para seleccionar la cita -->
+            <td id="nuevoNombre"></td>
+            <!-- Celda para el nombre del nuevo paciente -->
+            <td id="nuevoDNI"></td>
+            <!-- Celda para el DNI del nuevo paciente -->
+            <td id="nuevoTelefono"></td>
+            <!-- Celda para el teléfono del nuevo paciente -->
+            <td id="nuevaFechaNacimineto"></td>
+            <!-- Celda para la fecha de nacimiento del nuevo paciente -->
+            <td id="nuevaFechaCita"></td>
+            <!-- Celda para la fecha y hora de la nueva cita -->
+            <td id="nuevaObservaciones"></td>
+            <!-- Celda para observaciones de la nueva cita -->
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script
+      type="text/javascript"
+      src="funcionesJS/funcionesCitasCreadas.js"
+    ></script>
+    <!-- Enlaza el archivo JavaScript para la funcionalidad de la página -->
+  </body>
+  <footer id="pie">
+    <!-- Pie de página -->
+    <div class="footer-content">
+      <!-- Contenedor para el contenido del pie de página -->
+      <div class="footer-logo">
+        <!-- Sección para el logo en el pie de página -->
+        <img
+          id="img1"
+          src="imagenes/img_medacdent.png"
+          alt="Logo Clínica MedacDent"
+        />
+        <!-- Logo de la clínica -->
+      </div>
+      <div class="footer-description">
+        <!-- Sección para la descripción de la clínica -->
+        <p>
+          Clínica Dental MedacDent se compromete a ofrecer la mejor atención
+          dental a nuestros pacientes. Nuestro equipo de profesionales está aquí
+          para ayudarte a mantener una sonrisa saludable.
+        </p>
+        <!-- Descripción de la clínica -->
+      </div>
+      <div class="footer-links">
+        <!-- Sección para enlaces útiles -->
+        <h3>Enlaces útiles</h3>
+        <!-- Título para los enlaces -->
+        <ul>
+          <!-- Lista de enlaces -->
+          <li><a href="index.html">Inicio</a></li>
+          <!-- Enlace a la página de inicio -->
+          <li><a href="servicios.html">Servicios</a></li>
+          <!-- Enlace a la página de servicios -->
+          <li><a href="contacto.html">Contacto</a></li>
+          <!-- Enlace a la página de contacto -->
+          <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+          <!-- Enlace a la política de privacidad -->
+        </ul>
+      </div>
+      <div class="footer-social">
+        <!-- Sección para enlaces a redes sociales -->
+        <h3>Síguenos</h3>
+        <!-- Título para las redes sociales -->
+        <ul>
+          <!-- Lista de enlaces a redes sociales -->
+          <li>
+            <a href="https://www.facebook.com/MedacDent" target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <!-- Enlace a Facebook -->
+          <li>
+            <a href="https://www.instagram.com/MedacDent" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <!-- Enlace a Instagram -->
+          <li>
+            <a href="https://twitter.com/MedacDent" target="_blank">Twitter</a>
+          </li>
+          <!-- Enlace a Twitter -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- Sección inferior del pie de página -->
+      <p>© 2025 Clínica MedacDent. Todos los derechos reservados.</p>
+      <!-- Aviso de derechos de autor -->
+    </div>
+  </footer>
+</html>
